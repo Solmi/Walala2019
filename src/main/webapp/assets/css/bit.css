@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+#header{
+	height: 50px;
+	background-color: #3366cc;
+}
+
+#footer{
+	height: 50px;
+	background-color: #c0c0c0;
+}
+.waral{
+	background-color: white;
+}
