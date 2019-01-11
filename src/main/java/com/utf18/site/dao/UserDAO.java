@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 
 import com.utf18.site.vo.UserVO;
 
-
-
 @Repository
 public class UserDAO {
 	
@@ -18,6 +16,8 @@ public class UserDAO {
 		mybatis.insert("UserDAO.insert",vo);
 	}
 	
-	
-	
+	public UserVO getuservo(UserVO vo) {
+		return mybatis.selectOne("UserDAO.getuservo", vo);
+	}
+
 }

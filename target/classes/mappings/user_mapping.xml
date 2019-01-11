@@ -4,7 +4,7 @@
 
 <mapper namespace="UserDAO">
 
-	<resultMap type="user_info" id="uesrResult">
+	<resultMap type="users" id="usersResult">
 		<id property="email" column="email"/>
 		<result property="password" column="password"/>
 		<result property="nickname" column="nickname"/>
@@ -12,10 +12,10 @@
 
  	
 	<insert id="insert">
-		insert into user_info values (#{email}, #{password}, #{nickname})
+		insert into users values (#{email}, #{password}, #{nickname})
 	</insert>
 
-<!-- 	<select id="getuservo" resultType="user"> -->
-<!-- 		SELECT EMAIL, PASSWORD, NICKNAME FROM USERS WHERE EMAIL=#{email} -->
-<!-- 	</select> -->
+	<select id="getuservo" resultType="users">
+		SELECT email, password, nickname FROM users WHERE email=#{email}
+	</select>
 </mapper>

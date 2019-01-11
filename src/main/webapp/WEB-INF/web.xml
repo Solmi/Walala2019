@@ -33,6 +33,6 @@
     <url-pattern>*.do</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>joinpage.jsp</welcome-file>
+    <welcome-file>/WEB-INF/views/hello.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
