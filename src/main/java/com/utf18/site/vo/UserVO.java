@@ -9,7 +9,7 @@ public class UserVO {
 	public String getEmail() {
 		return email;
 	}
-
+//al³ë
 	public void setEmail(String email) {
 		this.email = email;
 	}
